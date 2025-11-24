@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std; 
+int main()
+{
+    int grade, counter = 0, sum = 0;
+    float average = 0;
+    cout << " enter grade or -1 to quit :";
+    cin >> grade;
+    while (grade != -1) {
+        sum += grade;
+        counter++;
+        cout << " enter grade or -1 to quit:";
+        cin >> grade;
+    }
+    average = (float)sum / counter;
+
+    cout << " the averge is  ; " << average << endl
+    return 0;
+}
+
+
+
